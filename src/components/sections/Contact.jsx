@@ -191,7 +191,7 @@ const Contact = () => {
               <button
                 type="submit"
                 className="w-full btn-primary flex items-center justify-center space-x-2"
-                disabled={false}
+                disabled={false} //isSubmitted fix 
               >
                 {isSubmitted ? (
                   <>

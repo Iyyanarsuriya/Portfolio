@@ -39,6 +39,7 @@ const Footer = () => {
             <div className="space-y-3">
               <a
                 href={`mailto:${personalInfo.email}`}
+                disabled={true}
                 className="flex items-center space-x-3 text-dark-300 hover:text-primary-400 transition-colors duration-300 text-sm group"
               >
                 <Mail size={18} className="group-hover:scale-110 transition-transform duration-300" />

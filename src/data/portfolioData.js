@@ -5,7 +5,7 @@ export const personalInfo = {
   email: "iyyanarsuriya10@gmail.com",
   phone: "+917305351481",
   location: "India",
-  linkedin: "https://www.linkedin.com/in/iyyanar-s-173293251", 
+  linkedin: "https://www.linkedin.com/in/iyyanar-s-173293251",
 };
 
 export const summary = `Front-End Developer with 2.5+ years of experience in designing and developing responsive, high-performance web applications using Angular and React. Skilled in creating intuitive user interfaces, reusable components, and implementing efficient state management with Redux. Experienced in API integration, performance optimization, and ensuring seamless cross-browser and cross-device compatibility. A strong collaborator within Agile teams, committed to writing clean, scalable, and maintainable code while delivering exceptional user experiences. Continuously expanding expertise in modern front-end technologies and best practices to drive innovation and efficiency. Additionally proficient in developing backend APIs using Node.js and Express.js.`;
@@ -41,7 +41,7 @@ export const workExperience = [
 ];
 
 export const skills = {
-  languages: ["JavaScript", "TypeScript", "HTML", "CSS (Bootstrap)", "PL/SQL"],
+  languages: ["JavaScript", "TypeScript", "HTML", "CSS (Bootstrap)", "PL/SQL", "SQL"],
   frameworks: [
     "React",
     "Angular",
@@ -63,6 +63,9 @@ export const skills = {
     "Vite",
     "Kilo Code",
     "Cursor AI",
+    "XAMPP",
+    "JWT",
+    "Razorpay",
   ],
   uiux: [
     "Figma",
@@ -118,14 +121,14 @@ export const projects = [
   },
   {
     id: 2,
-    title: "E-commerce Platform",
+    title: "Full-Stack E-commerce Application",
     description:
-      "Led UI development for a React-based e-commerce platform with focus on performance",
-    technologies: ["React", "Redux", "REST APIs", "Responsive Design"],
+      "Complete e-commerce solution with React frontend and Node.js backend",
+    technologies: ["React", "Redux", "Node.js", "Express.js", "SQL", "JWT", "Razorpay"],
     highlights: [
-      "Implemented lazy loading for improved page load times",
-      "Created reusable component library",
-      "Integrated RESTful APIs for seamless data flow",
+      "Secure JWT authentication & Razorpay payment integration",
+      "Implemented lazy loading & reusable component library",
+      "Admin panel for Product management & Order processing",
     ],
   },
   {
@@ -138,18 +141,6 @@ export const projects = [
       "Enhanced user experience and workflow efficiency",
       "Implemented real-time updates",
       "Integrated with backend APIs",
-    ],
-  },
-  {
-    id: 4,
-    title: "Full-Stack E-commerce Application",
-    description:
-      "Complete e-commerce solution with React frontend and Node.js backend",
-    technologies: ["React", "Node.js", "JWT", "SQL", "REST APIs"],
-    highlights: [
-      "Secure JWT authentication",
-      "Product management admin panel",
-      "Shopping cart and order management",
     ],
   },
 ];

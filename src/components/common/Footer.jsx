@@ -72,17 +72,6 @@ const Footer = () => {
               >
                 <Linkedin size={24} />
               </a>
-              {personalInfo.github && (
-                <a
-                  href={personalInfo.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-dark-300 hover:text-primary-400 transition-all duration-300 hover:scale-110"
-                  aria-label="GitHub"
-                >
-                  <Github size={24} />
-                </a>
-              )}
             </div>
 
             <p className="text-dark-400 text-sm flex items-center space-x-1">

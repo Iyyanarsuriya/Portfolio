@@ -9,7 +9,7 @@ const Contact = () => {
     subject: '',
     message: '',
   });
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(true);
 
   const handleChange = (e) => {
     setFormData({

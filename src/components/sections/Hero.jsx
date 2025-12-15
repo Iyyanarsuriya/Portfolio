@@ -1,7 +1,37 @@
+import { useState, useEffect } from 'react';
 import { ArrowDown, Download, Mail, Linkedin } from 'lucide-react';
 import { personalInfo } from '../../data/portfolioData';
 
 const Hero = () => {
+  const [text, setText] = useState('');
+  const [roleIndex, setRoleIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  
+  useEffect(() => {
+    const typingSpeed = isDeleting ? 50 : 150;
+    const pauseTime = 2000;
+    
+    const type = () => {
+      const currentRole = personalInfo.roles[roleIndex];
+      
+      if (isDeleting) {
+        setText(currentRole.substring(0, text.length - 1));
+      } else {
+        setText(currentRole.substring(0, text.length + 1));
+      }
+
+      if (!isDeleting && text === currentRole) {
+        setTimeout(() => setIsDeleting(true), pauseTime);
+      } else if (isDeleting && text === '') {
+        setIsDeleting(false);
+        setRoleIndex((prev) => (prev + 1) % personalInfo.roles.length);
+      }
+    };
+
+    const timer = setTimeout(type, typingSpeed);
+    return () => clearTimeout(timer);
+  }, [text, isDeleting, roleIndex]);
+
   const scrollToContact = () => {
     const element = document.querySelector('#contact');
     if (element) {
@@ -33,8 +63,9 @@ const Hero = () => {
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-dark-50 mb-4">
               {personalInfo.name}
             </h1>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold gradient-text mb-6">
-              {personalInfo.title}
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold gradient-text mb-6 h-12">
+              {text}
+              <span className="animate-pulse">|</span>
             </h2>
           </div>
 
@@ -68,7 +99,7 @@ const Hero = () => {
 
           {/* Tech Stack Pills */}
           <div className="flex flex-wrap justify-center gap-3 mt-8 animate-slide-up">
-            {['React', 'Angular', 'TypeScript', 'Node.js', 'Tailwind CSS', 'Redux'].map((tech) => (
+            {['React', 'Angular', 'Node.js', 'Express.js', 'TypeScript', 'Tailwind CSS'].map((tech) => (
               <span
                 key={tech}
                 className="px-4 py-2 bg-dark-800 border border-primary-500/30 rounded-full text-primary-300 text-sm font-medium hover:border-primary-500 hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300 cursor-default"

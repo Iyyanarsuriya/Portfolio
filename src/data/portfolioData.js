@@ -1,6 +1,7 @@
 export const personalInfo = {
   name: "IYYANAR S",
-  title: "Front-End Developer",
+  title: "Front-End & Full Stack Developer",
+  roles: ["Full Stack Developer", "Front-End Developer"],
   email: "iyyanarsuriya10@gmail.com",
   phone: "+917305351481",
   location: "India",
@@ -8,7 +9,7 @@ export const personalInfo = {
   github: "https://github.com/iyyanars", // Add your GitHub if available
 };
 
-export const summary = `Front-End Developer with 2.4+ years of experience in designing and developing responsive, high-performance web applications using Angular and React. Skilled in creating intuitive user interfaces, reusable components, and implementing efficient state management with Redux. Experienced in API integration, performance optimization, and ensuring seamless cross-browser and cross-device compatibility. A strong collaborator within Agile teams, committed to writing clean, scalable, and maintainable code while delivering exceptional user experiences. Continuously expanding expertise in modern front-end technologies and best practices to drive innovation and efficiency. Additionally proficient in developing backend APIs using Node.js.`;
+export const summary = `Front-End Developer with 2.5+ years of experience in designing and developing responsive, high-performance web applications using Angular and React. Skilled in creating intuitive user interfaces, reusable components, and implementing efficient state management with Redux. Experienced in API integration, performance optimization, and ensuring seamless cross-browser and cross-device compatibility. A strong collaborator within Agile teams, committed to writing clean, scalable, and maintainable code while delivering exceptional user experiences. Continuously expanding expertise in modern front-end technologies and best practices to drive innovation and efficiency. Additionally proficient in developing backend APIs using Node.js.`;
 
 export const workExperience = [
   {
@@ -45,13 +46,14 @@ export const skills = {
   frameworks: [
     "React",
     "Angular",
-    "Tailwind CSS",
-    "SCSS",
-    "Oracle Forms",
     "Node.js",
+    "Express.js",
+    "Tailwind CSS",
     "Redux",
+    "SCSS",
     "Material UI",
     "ShadCN",
+    "Oracle Forms",
   ],
   tools: [
     "Figma",

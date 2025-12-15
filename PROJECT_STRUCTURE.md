@@ -1,7 +1,7 @@
 # Portfolio Project Structure
 
 ## Overview
-This is a professional portfolio website for Iyyanar S, a Front-End Developer with 2.4+ years of experience.
+This is a professional portfolio website for Iyyanar S, a Front-End Developer with 2.5+ years of experience.
 
 ## Technology Stack
 - **React 18** - Modern UI library

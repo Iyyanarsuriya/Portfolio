@@ -137,6 +137,7 @@ const Contact = () => {
                   required
                   className="w-full px-4 py-3 bg-dark-700 border border-dark-600 rounded-lg text-dark-100 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all duration-300"
                   placeholder="Your Name"
+                  disabled
                 />
               </div>
 
@@ -153,6 +154,7 @@ const Contact = () => {
                   required
                   className="w-full px-4 py-3 bg-dark-700 border border-dark-600 rounded-lg text-dark-100 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all duration-300"
                   placeholder="your.email@example.com"
+                  disabled
                 />
               </div>
 
@@ -169,6 +171,7 @@ const Contact = () => {
                   required
                   className="w-full px-4 py-3 bg-dark-700 border border-dark-600 rounded-lg text-dark-100 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all duration-300"
                   placeholder="What's this about?"
+                  disabled
                 />
               </div>
 
@@ -185,13 +188,14 @@ const Contact = () => {
                   rows="5"
                   className="w-full px-4 py-3 bg-dark-700 border border-dark-600 rounded-lg text-dark-100 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all duration-300 resize-none"
                   placeholder="Your message..."
+                  disabled
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full btn-primary flex items-center justify-center space-x-2"
-                disabled={false} //isSubmitted fix 
+                className="w-full btn-primary flex items-center justify-center space-x-2 opacity-50 cursor-not-allowed"
+                disabled={isSubmitted}
               >
                 {isSubmitted ? (
                   <>

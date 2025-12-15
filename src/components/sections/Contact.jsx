@@ -42,7 +42,8 @@ const Contact = () => {
       icon: <Mail className="w-6 h-6" />,
       title: 'Email',
       value: personalInfo.email,
-      link: `mailto:${personalInfo.email}`,
+      // link: `mailto:${personalInfo.email}`,
+      link: null,
     },
     {
       icon: <Phone className="w-6 h-6" />,

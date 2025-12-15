@@ -9,7 +9,7 @@ const Contact = () => {
     subject: '',
     message: '',
   });
-  const [isSubmitted, setIsSubmitted] = useState(true);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -191,7 +191,7 @@ const Contact = () => {
               <button
                 type="submit"
                 className="w-full btn-primary flex items-center justify-center space-x-2"
-                disabled={isSubmitted}
+                disabled={false}
               >
                 {isSubmitted ? (
                   <>

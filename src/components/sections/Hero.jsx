@@ -73,7 +73,9 @@ const Hero = () => {
           <p className="text-dark-300 text-lg md:text-xl max-w-3xl animate-slide-up">
             Crafting beautiful, responsive web experiences with{' '}
             <span className="text-primary-400 font-semibold">React</span>,{' '}
-            <span className="text-primary-400 font-semibold">Angular</span>, and modern web technologies.
+            <span className="text-primary-400 font-semibold">Angular</span>,{' '}
+            <span className="text-primary-400 font-semibold">Node.js</span>, and{' '}
+            <span className="text-primary-400 font-semibold">Express.js</span>.
             Passionate about creating intuitive user interfaces and delivering exceptional digital solutions.
           </p>
 

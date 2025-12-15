@@ -9,7 +9,7 @@ export const personalInfo = {
   github: "https://github.com/iyyanars", // Add your GitHub if available
 };
 
-export const summary = `Front-End Developer with 2.5+ years of experience in designing and developing responsive, high-performance web applications using Angular and React. Skilled in creating intuitive user interfaces, reusable components, and implementing efficient state management with Redux. Experienced in API integration, performance optimization, and ensuring seamless cross-browser and cross-device compatibility. A strong collaborator within Agile teams, committed to writing clean, scalable, and maintainable code while delivering exceptional user experiences. Continuously expanding expertise in modern front-end technologies and best practices to drive innovation and efficiency. Additionally proficient in developing backend APIs using Node.js.`;
+export const summary = `Front-End Developer with 2.5+ years of experience in designing and developing responsive, high-performance web applications using Angular and React. Skilled in creating intuitive user interfaces, reusable components, and implementing efficient state management with Redux. Experienced in API integration, performance optimization, and ensuring seamless cross-browser and cross-device compatibility. A strong collaborator within Agile teams, committed to writing clean, scalable, and maintainable code while delivering exceptional user experiences. Continuously expanding expertise in modern front-end technologies and best practices to drive innovation and efficiency. Additionally proficient in developing backend APIs using Node.js and Express.js.`;
 
 export const workExperience = [
   {

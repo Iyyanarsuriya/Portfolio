@@ -30,7 +30,7 @@ export const workExperience = [
   {
     id: 2,
     title: "Fullstack Developer [Software Developer]",
-    company: "A4HA Solutions – Puducherry",
+    company: "AAHA Solutions – Puducherry",
     period: "Aug 7, 2024 to Present",
     responsibilities: [
       "Developed a responsive front-end with React and implemented secure authentication with JWT.",

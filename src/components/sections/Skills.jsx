@@ -7,19 +7,19 @@ const Skills = () => {
       title: 'Languages',
       icon: <Code className="w-6 h-6" />,
       items: skills.languages,
-      color: 'from-blue-500 to-cyan-500',
+      color: 'from-primary-500 to-primary-600',
     },
     {
       title: 'Frameworks & Libraries',
       icon: <Layers className="w-6 h-6" />,
       items: skills.frameworks,
-      color: 'from-purple-500 to-pink-500',
+      color: 'from-emerald-500 to-teal-500',
     },
     {
       title: 'Tools & Technologies',
       icon: <Wrench className="w-6 h-6" />,
       items: skills.tools,
-      color: 'from-green-500 to-emerald-500',
+      color: 'from-amber-500 to-yellow-500',
     },
     {
       title: 'UI/UX Design',
@@ -31,7 +31,7 @@ const Skills = () => {
       title: 'Soft Skills',
       icon: <Users className="w-6 h-6" />,
       items: skills.softSkills,
-      color: 'from-indigo-500 to-blue-500',
+      color: 'from-teal-600 to-cyan-600',
     },
   ];
 

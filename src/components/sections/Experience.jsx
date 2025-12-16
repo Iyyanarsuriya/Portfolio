@@ -17,7 +17,7 @@ const Experience = () => {
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               {/* Header */}
-              <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-6 pb-6 border-b border-dark-700">
+              <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-6 pb-6 border-b border-primary-500/20">
                 <div className="flex-1">
                   <div className="flex items-start space-x-3 mb-3">
                     <div className="bg-primary-500/10 p-3 rounded-lg mt-1">

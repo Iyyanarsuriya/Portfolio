@@ -189,7 +189,9 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full btn-primary flex items-center justify-center space-x-2 opacity-50 cursor-not-allowed"
+                className={`w-full btn-primary flex items-center justify-center space-x-2 transition-all duration-300 ${
+                  isSubmitted ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer hover:scale-[1.02] active:scale-[0.98]'
+                }`}
                 disabled={isSubmitted}
               >
                 {isSubmitted ? (

@@ -9,7 +9,7 @@ const Contact = () => {
     subject: '',
     message: '',
   });
-  const [isSubmitted, setIsSubmitted] = useState(true);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -42,8 +42,7 @@ const Contact = () => {
       icon: <Mail className="w-6 h-6" />,
       title: 'Email',
       value: personalInfo.email,
-      // link: `mailto:${personalInfo.email}`,
-      link: null,
+      link: `mailto:${personalInfo.email}`,
     },
     {
       icon: <Phone className="w-6 h-6" />,
@@ -138,7 +137,6 @@ const Contact = () => {
                   required
                   className="w-full px-4 py-3 bg-dark-700 border border-dark-600 rounded-lg text-dark-100 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all duration-300"
                   placeholder="Your Name"
-                  disabled
                 />
               </div>
 
@@ -155,7 +153,6 @@ const Contact = () => {
                   required
                   className="w-full px-4 py-3 bg-dark-700 border border-dark-600 rounded-lg text-dark-100 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all duration-300"
                   placeholder="your.email@example.com"
-                  disabled
                 />
               </div>
 
@@ -169,10 +166,8 @@ const Contact = () => {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  required
                   className="w-full px-4 py-3 bg-dark-700 border border-dark-600 rounded-lg text-dark-100 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all duration-300"
                   placeholder="What's this about?"
-                  disabled
                 />
               </div>
 
@@ -189,7 +184,6 @@ const Contact = () => {
                   rows="5"
                   className="w-full px-4 py-3 bg-dark-700 border border-dark-600 rounded-lg text-dark-100 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all duration-300 resize-none"
                   placeholder="Your message..."
-                  disabled
                 ></textarea>
               </div>
 

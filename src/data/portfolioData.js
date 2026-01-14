@@ -31,7 +31,7 @@ export const workExperience = [
     id: 2,
     title: "Fullstack Developer [Software Developer]",
     company: "AAHA Solutions – Puducherry",
-    period: "Aug 7, 2024 to Present",
+    period: "Aug 7, 2025 to Present",
     responsibilities: [
       "Developed a responsive front-end with React and implemented secure authentication with JWT.",
       "Built REST APIs in Node.js and designed SQL tables for users, products, cart, and orders.",

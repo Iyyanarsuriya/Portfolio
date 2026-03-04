@@ -1,4 +1,4 @@
-import { Code, Layers, Wrench, Palette, Users } from 'lucide-react';
+import { Code, Layers, Wrench, Palette, Users, Cloud } from 'lucide-react';
 import { skills } from '../../data/portfolioData';
 
 const Skills = () => {
@@ -20,6 +20,12 @@ const Skills = () => {
       icon: <Wrench className="w-6 h-6" />,
       items: skills.tools,
       color: 'from-amber-500 to-yellow-500',
+    },
+    {
+      title: 'Deployment & Cloud',
+      icon: <Cloud className="w-6 h-6" />,
+      items: skills.deployment,
+      color: 'from-blue-500 to-indigo-500',
     },
     {
       title: 'UI/UX Design',

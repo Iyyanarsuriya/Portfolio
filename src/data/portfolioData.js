@@ -73,6 +73,12 @@ export const skills = {
     "Cross-Browser Compatibility",
     "Canva",
   ],
+  deployment: [
+    "Netlify",
+    "Vercel",
+    "Render",
+    "Railway",
+  ],
   softSkills: [
     "Problem-Solving",
     "Adaptability",

@@ -1,42 +1,7 @@
-import { useState } from 'react';
-import { Mail, Phone, MapPin, Linkedin, Send, CheckCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin } from 'lucide-react';
 import { personalInfo } from '../../data/portfolioData';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-  });
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    
-    // Create mailto link with form data
-    const mailtoLink = `mailto:${personalInfo.email}?subject=${encodeURIComponent(
-      formData.subject
-    )}&body=${encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
-    )}`;
-    
-    window.location.href = mailtoLink;
-    
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({ name: '', email: '', subject: '', message: '' });
-    }, 3000);
-  };
-
   const contactInfo = [
     {
       icon: <Mail className="w-6 h-6" />,
@@ -66,15 +31,15 @@ const Contact = () => {
 
   return (
     <section id="contact" className="section-container bg-dark-800/50">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="section-title">
+      <div className="max-w-3xl mx-auto">
+        <h2 className="section-title text-center">
           Get In <span className="gradient-text">Touch</span>
         </h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="mt-12">
           {/* Contact Information */}
           <div className="space-y-6 animate-slide-up">
-            <div>
+            <div className="text-center">
               <h3 className="text-2xl font-bold text-dark-50 mb-4">Let's Connect!</h3>
               <p className="text-dark-300 leading-relaxed mb-8">
                 I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
@@ -82,7 +47,7 @@ const Contact = () => {
               </p>
             </div>
 
-            <div className="space-y-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {contactInfo.map((item, index) => (
                 <div
                   key={index}
@@ -120,94 +85,6 @@ const Contact = () => {
               ))}
             </div>
           </div>
-
-          {/* Contact Form */}
-          <div className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            <form onSubmit={handleSubmit} className="card space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-dark-200 font-semibold mb-2">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 bg-dark-700 border border-dark-600 rounded-lg text-dark-100 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all duration-300"
-                  placeholder="Your Name"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="email" className="block text-dark-200 font-semibold mb-2">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 bg-dark-700 border border-dark-600 rounded-lg text-dark-100 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all duration-300"
-                  placeholder="your.email@example.com"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="subject" className="block text-dark-200 font-semibold mb-2">
-                  Subject
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 bg-dark-700 border border-dark-600 rounded-lg text-dark-100 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all duration-300"
-                  placeholder="What's this about?"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-dark-200 font-semibold mb-2">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  rows="5"
-                  className="w-full px-4 py-3 bg-dark-700 border border-dark-600 rounded-lg text-dark-100 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all duration-300 resize-none"
-                  placeholder="Your message..."
-                ></textarea>
-              </div>
-
-              <button
-                type="submit"
-                className={`w-full btn-primary flex items-center justify-center space-x-2 transition-all duration-300 ${
-                  isSubmitted ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer hover:scale-[1.02] active:scale-[0.98]'
-                }`}
-                disabled={isSubmitted}
-              >
-                {isSubmitted ? (
-                  <>
-                    <CheckCircle size={20} />
-                    <span>Message Sent!</span>
-                  </>
-                ) : (
-                  <>
-                    <Send size={20} />
-                    <span>Send Message</span>
-                  </>
-                )}
-              </button>
-            </form>
-          </div>
         </div>
       </div>
     </section>
@@ -215,3 +92,4 @@ const Contact = () => {
 };
 
 export default Contact;
+

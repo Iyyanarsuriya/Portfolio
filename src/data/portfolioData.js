@@ -13,11 +13,12 @@ export const summary = `Front-End Developer with 2.6+ years of experience in des
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Developer [Migration- Trainee Programmer]",
+    title: "Frontend Developer [Migration- Trainee Programmer] & 6 Months Internship",
     company: "Kumaran Systems Private Limited – Cuddalore, Tamil Nadu",
-    period: "July 31, 2023 – July 31, 2025",
+    period: "Feb 1, 2023 – July 31, 2025",
     responsibilities: [
-      "Migrated legacy Oracle/Apex applications to modern web platforms using React (frontend) and Java (backend) for the Airspace Data Feeding project.",
+      "Completed a 6-month internship focused on web development fundamentals before transitioning to a full-time role.",
+      "Migrated legacy Oracle applications to modern web platforms using React (frontend) and Java (backend) for the Airspace Data Feeding project.",
       "Converted complex Oracle Forms into responsive, user-friendly React components, enhancing usability and maintainability.",
       "Assisted in developing Java RESTful APIs to replace monolithic PL/SQL logic, enabling a modular, scalable architecture.",
       "Developed and maintained a Ticket Support System using Angular, enhancing user experience and internal workflow efficiency.",

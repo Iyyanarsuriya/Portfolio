@@ -15,7 +15,7 @@ export const workExperience = [
     id: 1,
     title: "Frontend Developer [Migration- Trainee Programmer] & 6 Months Internship",
     company: "Kumaran Systems Private Limited – Cuddalore, Tamil Nadu",
-    period: "Feb 1, 2023 – July 31, 2025",
+    period: "July 31, 2023 – July 31, 2025",
     responsibilities: [
       "Completed a 6-month internship focused on web development fundamentals before transitioning to a full-time role.",
       "Migrated legacy Oracle applications to modern web platforms using React (frontend) and Java (backend) for the Airspace Data Feeding project.",

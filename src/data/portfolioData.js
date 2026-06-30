@@ -144,12 +144,12 @@ export const projects = [
     title: "Ticket Support System",
     description:
       "A robust internal helpdesk application built to streamline support queries, manage agent assignments, and track SLA metrics.",
-    technologies: ["Angular", "TypeScript", "REST APIs", "Bootstrap", "Chart.js"],
+    technologies: ["Angular", "TypeScript", "REST APIs", "Bootstrap"],
     highlights: [
       "Developed and maintained internal ticket support system using Angular to enhance user experience and team workflows",
       "Implemented dynamic ticket queuing and auto-assignment based on agent load and ticket category",
       "Integrated real-time status updates and SLA tracking to monitor query response and resolution timelines",
-      "Built visual reporting dashboards using chart libraries to display monthly ticket metrics and performance analytics",
+      "Built visual reporting dashboards to display monthly ticket metrics and performance analytics",
     ],
   },
   {

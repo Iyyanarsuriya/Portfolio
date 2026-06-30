@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <!-- Background Gradient matching the White/Gray theme -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f1f5f9" />
+    </linearGradient>
+    <!-- Sky Blue Gradient for the Letter I and border -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <!-- Subtle Glow Filter for Sky Blue border -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Outer glowing circle with sky-blue gradient border -->
+  <circle cx="50" cy="50" r="45" fill="url(#bgGrad)" stroke="url(#skyGrad)" stroke-width="4" filter="url(#glow)" />
+  
+  <!-- Stylized Letter 'I' with serifs and sky-blue gradient -->
+  <g fill="url(#skyGrad)">
+    <!-- Top Serif Bar -->
+    <rect x="35" y="25" width="30" height="8" rx="2" />
+    <!-- Vertical Column -->
+    <rect x="45" y="33" width="10" height="34" rx="2" />
+    <!-- Bottom Serif Bar -->
+    <rect x="35" y="67" width="30" height="8" rx="2" />
+  </g>
+</svg>

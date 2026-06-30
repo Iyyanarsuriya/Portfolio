@@ -3,28 +3,28 @@
 
 @theme {
   /* Custom Colors */
-  /* Custom Colors - Theme: Deep Green & Gold */
-  --color-primary-50: #fbf8f2;
-  --color-primary-100: #f5f0e3;
-  --color-primary-200: #eaddc0;
-  --color-primary-300: #deca9d;
-  --color-primary-400: #d2b77a;
-  --color-primary-500: #c6a457;
-  --color-primary-600: #aa8c46;
-  --color-primary-700: #8e753a;
-  --color-primary-800: #715d2f;
-  --color-primary-900: #554623;
+  /* Custom Colors - Theme: White, Gray, Sky Blue */
+  --color-primary-50: #f0f9ff;
+  --color-primary-100: #e0f2fe;
+  --color-primary-200: #bae6fd;
+  --color-primary-300: #0284c7; /* Sky-600 for contrast text */
+  --color-primary-400: #0369a1; /* Sky-700 for contrast text */
+  --color-primary-500: #0ea5e9; /* Sky-500 core */
+  --color-primary-600: #0284c7;
+  --color-primary-700: #0369a1;
+  --color-primary-800: #075985;
+  --color-primary-900: #0c4a6e;
 
-  --color-dark-50: #f2f5f5;
-  --color-dark-100: #e2e8e8;
-  --color-dark-200: #c6d3d2;
-  --color-dark-300: #a1b7b6;
-  --color-dark-400: #7a9795;
-  --color-dark-500: #5a7b79;
-  --color-dark-600: #42615f;
-  --color-dark-700: #314a49;
-  --color-dark-800: #243635;
-  --color-dark-900: #1a2e2e;
+  --color-dark-50: #0f172a;  /* Core Body/Header Text */
+  --color-dark-100: #1e293b; /* Subheadings */
+  --color-dark-200: #334155; /* Secondary text */
+  --color-dark-300: #475569; /* Paragraph text */
+  --color-dark-400: #64748b; /* Muted text */
+  --color-dark-500: #94a3b8; /* Muted borders */
+  --color-dark-600: #cbd5e1; /* Secondary borders */
+  --color-dark-700: #e2e8f0; /* Light borders */
+  --color-dark-800: #f8fafc; /* Card backgrounds */
+  --color-dark-900: #ffffff; /* Main background */
 
   /* Custom Fonts */
   --font-sans: 'Inter', system-ui, sans-serif;
@@ -192,14 +192,14 @@ h6 {
   background-color: var(--color-dark-800);
   border-radius: 0.75rem;
   padding: 1.5rem;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(198, 164, 87, 0.3);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.03), 0 4px 6px -2px rgba(0, 0, 0, 0.01);
+  border: 1px solid var(--color-dark-700);
   transition: all 0.3s;
 }
 
 .card:hover {
-  border-color: rgba(198, 164, 87, 0.5);
-  box-shadow: 0 25px 50px -12px rgba(198, 164, 87, 0.1);
+  border-color: var(--color-primary-500);
+  box-shadow: 0 20px 25px -5px rgba(14, 165, 233, 0.08);
 }
 
 .gradient-text {
@@ -230,18 +230,18 @@ h6 {
 }
 
 .glass-effect {
-  background-color: rgba(30, 41, 59, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(16px);
-  border: 1px solid rgba(51, 65, 85, 0.5);
+  border: 1px solid rgba(226, 232, 240, 0.8);
 }
 
 /* Utility Classes */
 .text-shadow {
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .glow {
-  box-shadow: 0 0 20px rgba(198, 164, 87, 0.3);
+  box-shadow: 0 0 20px rgba(14, 165, 233, 0.15);
 }
 
 /* Animation Classes */

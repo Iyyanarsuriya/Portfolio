@@ -150,4 +150,16 @@ export const projects = [
       "Integrated with backend APIs",
     ],
   },
+  {
+    id: 4,
+    title: "Project Change Management System",
+    description:
+      "A workflow-driven platform to draft, review, approve, and audit project Change Requests (CR).",
+    technologies: ["React", "Node.js", "Express.js", "Vite", "SQL", "JWT"],
+    highlights: [
+      "Built interactive dashboards for role-based users (Submitters, Managers, and CCB members) with React and Vite",
+      "Designed RESTful APIs using Node.js and Express to manage change request lifecycles and transitions",
+      "Implemented JWT security, request tracking, and change audit trails to ensure governance compliance",
+    ],
+  },
 ];

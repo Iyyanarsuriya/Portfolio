@@ -143,23 +143,25 @@ export const projects = [
     id: 3,
     title: "Ticket Support System",
     description:
-      "Developed and maintained internal ticket support system using Angular",
-    technologies: ["Angular", "TypeScript", "REST APIs"],
+      "A robust internal helpdesk application built to streamline support queries, manage agent assignments, and track SLA metrics.",
+    technologies: ["Angular", "TypeScript", "REST APIs", "Bootstrap", "Chart.js"],
     highlights: [
-      "Enhanced user experience and workflow efficiency",
-      "Implemented real-time updates",
-      "Integrated with backend APIs",
+      "Developed and maintained internal ticket support system using Angular to enhance user experience and team workflows",
+      "Implemented dynamic ticket queuing and auto-assignment based on agent load and ticket category",
+      "Integrated real-time status updates and SLA tracking to monitor query response and resolution timelines",
+      "Built visual reporting dashboards using chart libraries to display monthly ticket metrics and performance analytics",
     ],
   },
   {
     id: 4,
-    title: "Project Change Management System",
+    title: "Change Management System",
     description:
       "A workflow-driven platform to draft, review, approve, and audit project Change Requests (CR).",
-    technologies: ["React", "Node.js", "Express.js", "Vite", "SQL", "JWT"],
+    technologies: ["React", "Node.js", "Express.js", "Vite", "SQL", "JWT", "WebSockets"],
     highlights: [
       "Built interactive dashboards for role-based users (Submitters, Managers, and CCB members) with React and Vite",
       "Designed RESTful APIs using Node.js and Express to manage change request lifecycles and transitions",
+      "Integrated WebSockets to enable real-time status updates and instant approval notifications for board members",
       "Implemented JWT security, request tracking, and change audit trails to ensure governance compliance",
     ],
   },

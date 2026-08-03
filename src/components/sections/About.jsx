@@ -5,7 +5,7 @@ const About = () => {
   const highlights = [
     {
       icon: <Code2 className="w-8 h-8" />,
-      title: '2.10+ Years',
+      title: '3+ Years',
       description: 'Professional Experience',
     },
     {

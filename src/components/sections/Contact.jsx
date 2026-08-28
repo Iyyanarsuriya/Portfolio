@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Github } from 'lucide-react';
 import { personalInfo } from '../../data/portfolioData';
 
 const Contact = () => {
@@ -24,9 +24,19 @@ const Contact = () => {
     {
       icon: <Linkedin className="w-6 h-6" />,
       title: 'LinkedIn',
-      value: 'Connect with me',
+      value: 'Connect on LinkedIn',
       link: personalInfo.linkedin,
     },
+    ...(personalInfo.github
+      ? [
+          {
+            icon: <Github className="w-6 h-6" />,
+            title: 'GitHub',
+            value: 'View GitHub Profile',
+            link: personalInfo.github,
+          },
+        ]
+      : []),
   ];
 
   return (

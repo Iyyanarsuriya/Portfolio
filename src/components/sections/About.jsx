@@ -1,5 +1,5 @@
-import { Code2, Rocket, Users, Award } from 'lucide-react';
-import { summary, education } from '../../data/portfolioData';
+import { Code2, Rocket, Users, Award, GraduationCap, CheckCircle2, Globe } from 'lucide-react';
+import { summary, education, certificates, languages } from '../../data/portfolioData';
 
 const About = () => {
   const highlights = [
@@ -10,18 +10,18 @@ const About = () => {
     },
     {
       icon: <Rocket className="w-8 h-8" />,
-      title: 'Modern Stack',
-      description: 'React, Angular, Node.js',
+      title: 'Full-Stack Stack',
+      description: 'React, Node.js, Python, FastAPI',
     },
     {
       icon: <Users className="w-8 h-8" />,
-      title: 'Agile Teams',
-      description: 'Collaborative Development',
+      title: 'Agile & DevOps',
+      description: 'CI/CD & Collaborative Teams',
     },
     {
       icon: <Award className="w-8 h-8" />,
       title: 'Quality Code',
-      description: 'Clean & Maintainable',
+      description: 'Scalable & AI-Powered Solutions',
     },
   ];
 
@@ -55,20 +55,64 @@ const About = () => {
           ))}
         </div>
 
-        {/* Education */}
-        <div className="card animate-slide-up">
-          <div className="flex items-start space-x-4">
-            <div className="bg-primary-500/10 p-4 rounded-lg">
-              <Award className="w-8 h-8 text-primary-400" />
+        {/* Education, Certifications & Languages Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          {/* Education */}
+          <div className="card animate-slide-up flex flex-col justify-between">
+            <div>
+              <div className="flex items-center space-x-3 mb-4">
+                <div className="bg-primary-500/10 p-3 rounded-lg">
+                  <GraduationCap className="w-6 h-6 text-primary-400" />
+                </div>
+                <h3 className="text-xl font-bold text-primary-400">Education</h3>
+              </div>
+              <h4 className="text-lg font-semibold text-dark-100 mb-1">{education.degree}</h4>
+              <p className="text-dark-300 text-sm mb-3">{education.institution}</p>
             </div>
-            <div className="flex-1">
-              <h3 className="text-2xl font-bold text-primary-400 mb-2">Education</h3>
-              <h4 className="text-xl font-semibold text-dark-100 mb-2">{education.degree}</h4>
-              <p className="text-dark-300 mb-1">{education.institution}</p>
-              <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4 text-dark-400">
-                <span>{education.period}</span>
-                <span className="hidden sm:inline">•</span>
-                <span className="font-semibold text-primary-400">CGPA: {education.cgpa}</span>
+            <div className="flex items-center justify-between pt-4 border-t border-dark-700 text-dark-300 text-sm">
+              <span>{education.period}</span>
+              <span className="font-semibold text-primary-400 bg-primary-500/10 px-2.5 py-1 rounded">CGPA: {education.cgpa}</span>
+            </div>
+          </div>
+
+          {/* Certifications */}
+          <div className="card animate-slide-up flex flex-col justify-between">
+            <div>
+              <div className="flex items-center space-x-3 mb-4">
+                <div className="bg-emerald-500/10 p-3 rounded-lg">
+                  <CheckCircle2 className="w-6 h-6 text-emerald-400" />
+                </div>
+                <h3 className="text-xl font-bold text-emerald-400">Certifications</h3>
+              </div>
+              {certificates.map((cert) => (
+                <div key={cert.id} className="space-y-2">
+                  <h4 className="text-lg font-semibold text-dark-100">{cert.title}</h4>
+                  <p className="text-dark-300 text-sm leading-relaxed line-clamp-4">
+                    {cert.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Languages */}
+          <div className="card animate-slide-up flex flex-col justify-between">
+            <div>
+              <div className="flex items-center space-x-3 mb-4">
+                <div className="bg-blue-500/10 p-3 rounded-lg">
+                  <Globe className="w-6 h-6 text-blue-400" />
+                </div>
+                <h3 className="text-xl font-bold text-blue-400">Languages</h3>
+              </div>
+              <div className="space-y-3">
+                {languages.map((lang, idx) => (
+                  <div key={idx} className="flex items-center justify-between p-3 bg-dark-700/60 rounded-lg border border-dark-600">
+                    <span className="font-semibold text-dark-100">{lang.name}</span>
+                    <span className="text-xs font-medium px-2.5 py-1 rounded bg-primary-500/10 text-primary-300 border border-primary-500/20">
+                      {lang.proficiency}
+                    </span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -79,3 +123,4 @@ const About = () => {
 };
 
 export default About;
+

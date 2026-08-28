@@ -1,4 +1,4 @@
-import { Code, Layers, Wrench, Palette, Users, Cloud } from 'lucide-react';
+import { Code, Layers, Server, Database, Wrench, Users } from 'lucide-react';
 import { skills } from '../../data/portfolioData';
 
 const Skills = () => {
@@ -10,31 +10,31 @@ const Skills = () => {
       color: 'from-primary-500 to-primary-600',
     },
     {
-      title: 'Frameworks & Libraries',
+      title: 'Frontend Technologies',
       icon: <Layers className="w-6 h-6" />,
-      items: skills.frameworks,
+      items: skills.frontend,
       color: 'from-emerald-500 to-teal-500',
     },
     {
-      title: 'Tools & Technologies',
+      title: 'Backend Technologies',
+      icon: <Server className="w-6 h-6" />,
+      items: skills.backend,
+      color: 'from-blue-500 to-indigo-500',
+    },
+    {
+      title: 'AI & Database',
+      icon: <Database className="w-6 h-6" />,
+      items: skills.aiAndDatabase,
+      color: 'from-purple-500 to-pink-500',
+    },
+    {
+      title: 'Tools & Platforms',
       icon: <Wrench className="w-6 h-6" />,
       items: skills.tools,
       color: 'from-amber-500 to-yellow-500',
     },
     {
-      title: 'Deployment & Cloud',
-      icon: <Cloud className="w-6 h-6" />,
-      items: skills.deployment,
-      color: 'from-blue-500 to-indigo-500',
-    },
-    {
-      title: 'UI/UX Design',
-      icon: <Palette className="w-6 h-6" />,
-      items: skills.uiux,
-      color: 'from-orange-500 to-red-500',
-    },
-    {
-      title: 'Soft Skills',
+      title: 'Methodologies & Soft Skills',
       icon: <Users className="w-6 h-6" />,
       items: skills.softSkills,
       color: 'from-teal-600 to-cyan-600',

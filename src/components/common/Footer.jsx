@@ -12,8 +12,8 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-xl font-bold gradient-text">IYYANAR S</h3>
             <p className="text-dark-300 text-sm">
-              Front-End Developer passionate about creating beautiful, responsive web applications
-              with modern technologies.
+              Full-Stack Developer passionate about delivering high-performance web applications,
+              scalable backend architectures, and AI-powered solutions.
             </p>
           </div>
 
@@ -39,7 +39,6 @@ const Footer = () => {
             <div className="space-y-3">
               <a
                 href={`mailto:${personalInfo.email}`}
-                disabled={true}
                 className="flex items-center space-x-3 text-dark-300 hover:text-primary-400 transition-colors duration-300 text-sm group"
               >
                 <Mail size={18} className="group-hover:scale-110 transition-transform duration-300" />
@@ -73,6 +72,17 @@ const Footer = () => {
               >
                 <Linkedin size={24} />
               </a>
+              {personalInfo.github && (
+                <a
+                  href={personalInfo.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-dark-300 hover:text-primary-400 transition-all duration-300 hover:scale-110"
+                  aria-label="GitHub"
+                >
+                  <Github size={24} />
+                </a>
+              )}
             </div>
 
             <p className="text-dark-400 text-sm flex items-center space-x-1">

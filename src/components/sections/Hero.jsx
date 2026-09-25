@@ -82,10 +82,12 @@ const Hero = () => {
           <p className="text-dark-300 text-lg md:text-xl max-w-3xl animate-slide-up">
             Delivering modern web applications, scalable backend services, and AI-powered solutions with{' '}
             <span className="text-primary-400 font-semibold">React.js</span>,{' '}
+            <span className="text-primary-400 font-semibold">Next.js</span>,{' '}
             <span className="text-primary-400 font-semibold">Angular</span>,{' '}
             <span className="text-primary-400 font-semibold">Node.js</span>,{' '}
-            <span className="text-primary-400 font-semibold">Python</span>, and{' '}
-            <span className="text-primary-400 font-semibold">FastAPI</span>.
+            <span className="text-primary-400 font-semibold">Python</span>,{' '}
+            <span className="text-primary-400 font-semibold">FastAPI</span>, and{' '}
+            <span className="text-primary-400 font-semibold">Microservices</span>.
           </p>
 
           {/* CTA Buttons */}
@@ -110,7 +112,7 @@ const Hero = () => {
 
           {/* Tech Stack Pills */}
           <div className="flex flex-wrap justify-center gap-3 mt-8 animate-slide-up">
-            {['React.js', 'Angular', 'Node.js', 'Python', 'FastAPI', 'AI Applications', 'SQL', 'TypeScript', 'Tailwind CSS'].map((tech) => (
+            {['React.js', 'Next.js', 'Angular', 'Node.js', 'Python', 'FastAPI', 'Microservices', 'AI Applications', 'SQL', 'TypeScript', 'Tailwind CSS'].map((tech) => (
               <span
                 key={tech}
                 className="px-4 py-2 bg-dark-800 border border-primary-500/30 rounded-full text-primary-300 text-sm font-medium hover:border-primary-500 hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300 cursor-default"

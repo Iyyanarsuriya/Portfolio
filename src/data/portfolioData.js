@@ -1,12 +1,14 @@
 export const personalInfo = {
   name: "IYYANAR S",
-  title: "Full-Stack Developer | React.js | Angular | Node.js | Python | FastAPI | AI Applications",
+  title: "Full-Stack Developer | React.js | Next.js | Angular | Node.js | Python | FastAPI | Microservices | AI Applications",
   roles: [
     "Full-Stack Developer",
     "React.js Developer",
+    "Next.js Developer",
     "Angular Developer",
     "Node.js Developer",
     "Python & FastAPI Developer",
+    "Microservices Developer",
     "AI Applications Developer",
   ],
   email: "iyyanarsuriya10@gmail.com",
@@ -17,7 +19,7 @@ export const personalInfo = {
   github: "https://github.com/iyyanarsuriya",
 };
 
-export const summary = `Full-Stack Developer with 3+ years of experience delivering web applications and enterprise software using React.js, Angular, Node.js, Python, FastAPI, REST APIs, and SQL. Experienced in front-end engineering, back-end services, API integration, authentication, workflow automation, and AI-powered applications. Proficient in performance optimization, reusable UI components, Git, Agile practices, and CI/CD.`;
+export const summary = `Full-Stack Developer with 3+ years of experience delivering web applications and enterprise software using React.js, Next.js, Angular, Node.js, Python, FastAPI, Microservices, REST APIs, and SQL. Experienced in front-end engineering, back-end services, API integration, authentication, workflow automation, and AI-powered applications. Proficient in performance optimization, reusable UI components, Git, Agile practices, and CI/CD.`;
 
 export const workExperience = [
   {
@@ -55,6 +57,7 @@ export const skills = {
   languages: ["Python", "JavaScript", "TypeScript", "SQL", "PL/SQL", "HTML5", "CSS3"],
   frontend: [
     "React.js",
+    "Next.js",
     "Angular",
     "Redux Toolkit",
     "Tailwind CSS",
@@ -65,6 +68,7 @@ export const skills = {
   backend: [
     "Python",
     "FastAPI",
+    "Microservices",
     "Uvicorn",
     "SQLAlchemy 2.0",
     "MySQL",

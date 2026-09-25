@@ -125,7 +125,7 @@ This project is open source and available for personal use.
 
 **Iyyanar S**
 - Email: iyyanarsuriya10@gmail.com
-- LinkedIn: [Iyyanar S](https://www.linkedin.com/in/iyyanar-s-173293251)
+- LinkedIn: [Iyyanar S](https://www.linkedin.com/in/iyyanars)
 - Location: India
 
 ---

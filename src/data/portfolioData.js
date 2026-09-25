@@ -12,7 +12,7 @@ export const personalInfo = {
   email: "iyyanarsuriya10@gmail.com",
   phone: "+91 7305351481",
   location: "India",
-  linkedin: "https://www.linkedin.com/in/iyyanar-s-173293251",
+  linkedin: "https://www.linkedin.com/in/iyyanars",
   portfolio: "https://iyyanarsuriya.github.io/Portfolio",
   github: "https://github.com/iyyanarsuriya",
 };
